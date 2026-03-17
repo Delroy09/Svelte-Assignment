@@ -1,5 +1,5 @@
 <script>
-  let { name = "Student" } = $props();
+  export let name = "Student";
 </script>
 
 <div class="card">

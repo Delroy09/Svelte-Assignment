@@ -7,9 +7,9 @@
 </script>
 
 <div class="counter">
-  <button class="action-btn" onclick={increment}>Plus</button>
+  <button class="action-btn" on:click={increment}>Plus</button>
   <span class="value">{count}</span>
-  <button class="action-btn" onclick={decrement}>Minus</button>
+  <button class="action-btn" on:click={decrement}>Minus</button>
 </div>
 
 <style>
