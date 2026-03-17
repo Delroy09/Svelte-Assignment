@@ -1,6 +1,7 @@
 <script>
   import Counter from "$lib/components/Counter.svelte";
   import Hello from "$lib/components/Hello.svelte";
+  import Todo from "$lib/components/Todo.svelte";
 </script>
 
 <h1>Delroy's Home!</h1>
@@ -9,6 +10,7 @@
 <main>
   <Hello name="Sir" />
   <Counter />
+  <Todo />
 </main>
 
 <style>
