@@ -2,10 +2,9 @@
   /** @typedef {{ id: number, text: string }} Todo */
 
   /** @type {string} */
-  let newTodo = "";
-
+  let newTodo = $state("");
   /** @type {Todo[]} */
-  let todos = [];
+  let todos = $state([]);
 
   function add() {
     const text = newTodo.trim();
@@ -29,8 +28,13 @@
   }
 </script>
 
-<form on:submit|preventDefault={add}>
-  <input placeholder="Add todo..." bind:value={newTodo} on:keydown={onKey} />
+<form
+  onsubmit={(e) => {
+    e.preventDefault();
+    add();
+  }}
+>
+  <input placeholder="Add todo..." bind:value={newTodo} onkeydown={onKey} />
   <button type="submit">Add</button>
 </form>
 
@@ -41,7 +45,7 @@
     {#each todos as todo (todo.id)}
       <li>
         {todo.text}
-        <button on:click={() => remove(todo.id)}>✕</button>
+        <button onclick={() => remove(todo.id)}>✕</button>
       </li>
     {/each}
   </ul>
