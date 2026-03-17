@@ -35,7 +35,7 @@
   }}
 >
   <input placeholder="Add todo..." bind:value={newTodo} onkeydown={onKey} />
-  <button type="submit">Add</button>
+  <button type="submit">Add todo</button>
 </form>
 
 {#if todos.length === 0}
@@ -45,7 +45,7 @@
     {#each todos as todo (todo.id)}
       <li>
         {todo.text}
-        <button onclick={() => remove(todo.id)}>✕</button>
+        <button onclick={() => remove(todo.id)}>❌</button>
       </li>
     {/each}
   </ul>

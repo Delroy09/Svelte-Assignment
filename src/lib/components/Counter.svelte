@@ -6,12 +6,10 @@
   const reset = () => (count = 0);
 </script>
 
-<div class="counter">
-  <button class="action-btn" onclick={decrement}>Minus</button>
-  <span class="value">{count}</span>
-  <button class="action-btn" onclick={increment}>Plus</button>
-  <button class="action-btn" onclick={reset}>reset</button>
-</div>
+<button class="action-btn" onclick={decrement}>Minus</button>
+<span class="value">{count}</span>
+<button class="action-btn" onclick={increment}>Plus</button>
+<button class="action-btn" onclick={reset}>reset</button>
 
 <style>
   .action-btn {
@@ -21,6 +19,8 @@
     padding: 12px;
   }
   :hover {
+    transition-duration: 300ms;
+    background-color: rgb(20, 68, 98);
     cursor: pointer;
   }
 
