@@ -4,7 +4,7 @@
 
 <div class="card">
   <h2>Svelte Framework Demo</h2>
-  <p>Hello, <strong>{name}</strong>! This is a simple reusable component.</p>
+  <p>Hello, <b><i>{name}</i></b>! This is a simple reusable component.</p>
 </div>
 
 <style>

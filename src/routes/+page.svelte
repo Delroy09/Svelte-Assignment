@@ -2,6 +2,7 @@
   import Counter from "$lib/components/Counter.svelte";
   import Hello from "$lib/components/Hello.svelte";
   import Todo from "$lib/components/Todo.svelte";
+  import Toggle from "$lib/components/Toggle.svelte";
 </script>
 
 <h1>Delroy's Home!</h1>
@@ -10,7 +11,14 @@
 <main>
   <Hello name="Sir" />
   <Counter />
+
+  <br />
+  <br />
   <Todo />
+
+  <br />
+  <br />
+  <Toggle name="Test" />
 </main>
 
 <style>

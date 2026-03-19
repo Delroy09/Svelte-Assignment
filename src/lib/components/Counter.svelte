@@ -18,7 +18,8 @@
     border-radius: 12px;
     padding: 12px;
   }
-  :hover {
+
+  .action-btn:hover {
     transition-duration: 300ms;
     background-color: rgb(20, 68, 98);
     cursor: pointer;
