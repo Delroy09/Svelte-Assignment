@@ -54,7 +54,6 @@ pnpm preview
 
 ---
 
-If you want, I can also create the `screenshots/` folder and add a small script to capture the app pages, or produce a single-slide speaker note file. Which next?
 
 # sv
 
